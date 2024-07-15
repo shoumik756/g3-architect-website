@@ -121,10 +121,77 @@ main > section{
     color: rgba(255, 144, 14, 1);
 }
 .feature-description{
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.5rem;
     margin-bottom: 32px;
     color: #727272;
+}
+/* our facts elated style */
+.fact-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+    margin: 0 0 24px 0;
+}
+.fact-describe{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 32px;
+    color: #727272;
+    max-width: 540px;
+    margin: 0 0 24px 0;
+}
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px;
+    margin: 100px 50px 0 50px;
+   
+}
+.fact-card{
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fact-numbers{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin:10px 0;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #727272;
+}
+/* sponsors related style */
+.sponsor-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+    margin: 0 0 24px 0;
+}
+.sponsor-description{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 32px;
+    color: #727272;
+    margin: 0 0 24px 0;
+}
+.sponsor{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 150px;
+    filter: grayscale(100%);
 }
 
 
@@ -138,12 +205,34 @@ main > section{
     .teams{
         flex-direction: column;
     }
-    .team-img-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
     .our-features{
         margin: 0 25px;
     }
+    .team-img-container, 
+    .fact-container,
+    .sponsor-companies{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sponsor-companies{
+        justify-items: center;
+        gap: 50px;
+    }
+    .fact-container{
+        justify-items: center;
+        gap: 24px;
+    }
+    .fact-container{
+        margin-top: 50px;
+    }
+    .fact-title{
+        text-align: center;
+    }
+    .fact-describe{
+        text-align: center;
+        margin: 0 auto;
+    }
+   
+    
 }
 
 /* medium size device */
@@ -153,5 +242,20 @@ main > section{
     }
     .our-features{
         margin: 50px auto;
+    }
+    .sponsor-companies, .fact-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+    .fact-container{
+        margin-top: 50px;
+    }
+    .fact-title{
+        text-align: center;
+    }
+    .fact-describe{
+        text-align: center;
+        margin: 0 auto;
     }
 }
